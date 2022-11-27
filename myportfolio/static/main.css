@@ -1,0 +1,296 @@
+/*main body*/
+body{
+background-color: black;
+}
+
+.navbar-toggler{
+    width: 25;
+    height: 35px;
+    background-color: rgb(56, 180, 180);
+    border:none;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+#myBtn {
+   
+    position: fixed;
+    bottom: 5rem;
+    right: 2.5rem;
+    z-index: 99;
+    
+    cursor: pointer;
+    padding: 15px;
+    
+  }
+  
+  
+
+/*Navbar*/
+.logo{
+    font-family: 'Yesteryear', cursive;
+    color: azure;
+    font-size: 48px;
+    text-decoration: none;
+    
+}
+a{
+    color: rgb(56, 180, 180)  !important;
+    text-decoration: none;
+}
+
+a:hover{
+color: azure !important;
+}
+
+.link-buttons{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+.active{
+    color: azure !important;
+    font-weight: 400;
+}
+
+/*Index*/
+.header-container{
+    border: 0px solid white;
+    height: 450px;
+    margin-top: 10rem;
+    
+ 
+    
+}
+.header-inner-section-1{
+    background-color: rgb(188, 191, 194,0.3);
+    height: 70%;  
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 5%;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    
+}
+
+.header-inner-section-3{
+    background-color: rgb(188, 191, 194,0.3);
+    height: 70%;  
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 5%;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    
+}
+
+.header-inner-section-2{
+    border: 0px solid gray;
+    height: 100%;  
+    border-radius: 20px;
+}
+.header-text-1{
+    color: rgb(56, 180, 180);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    
+}
+
+.header-img{  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+ 
+  -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+   
+}
+.header-img:hover{
+    transform: scale(1.05);
+    
+}
+.social-icons{
+    padding: 5px;
+}
+
+.social-icons img{
+    height: 24px;
+    width:24px;
+    
+}
+.social-icons a:nth-child(2) img{
+    margin-left: 5px;
+    margin-right: 5px;
+    height:28px;
+    width:28px;
+    
+}
+.download-cv{
+    color: rgb(56, 180, 180);
+    font-family:  'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* container-2*/
+.tools-container{
+border: 0px solid white;
+margin-top: 5rem;
+
+
+}
+
+.tools-table{
+    color: rgb(56, 180, 180);
+    background-color: rgb(188, 191, 194,0.3);
+    border: 1px solid rgb(56, 180, 180,0.5);
+   
+    
+}
+
+.tools-table-header{
+    color: azure;
+    
+    font-family:  'Poppins', sans-serif;
+    font-size: 24px;
+}
+.tools-table-data{
+    color: azure;
+    
+    font-family:  'Poppins', sans-serif;
+    font-size: 18px;
+    border-top: 1px solid rgb(56, 180, 180,0.5);
+    
+}
+.tool-icons{
+   border: 0px solid white;
+}
+
+.tool-icons a img{
+   height: 50px;
+   width: 50px;
+   margin:10px;
+}
+
+
+/* Media Queries*/
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .header-container{
+   
+    height: 350px !important;
+    
+}
+.header-inner-section-1{
+    border-radius: 10px;
+    margin-top: 0 !important;
+    
+}
+.header-inner-section-2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+.header-inner-section-3{
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5px;
+    width: 49%;
+    height: 100%;
+}
+.header-img{  
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+   
+}
+.tools-container{
+
+margin-top: 20rem;
+
+}
+
+
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .header-container{
+   
+    height: 250px !important;
+    
+}
+.header-inner-section-1{
+    border-radius: 5px;
+    margin-top: 0 !important;
+    
+}
+.header-inner-section-2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    display: none;
+}
+.header-inner-section-3{
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+    width: 100%;
+    height: 100%;
+}
+.header-img{  
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px;
+ 
+   
+}
+.tools-container{
+
+margin-top: 15rem;
+
+}
+
+
+
+
+
+  }
+
+
+
+
+/*Footer*/
+.footer{
+color: azure;
+font-family: 'Poppins', sans-serif;
+font-size: large;
+vertical-align:bottom;
+}
+.footer-icon{
+vertical-align:bottom;
+color: red;
+font-weight: 800;
+}
+
+
+

@@ -1,0 +1,258 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+
+.projects-container{
+    margin-top: 5rem;
+    color: rgb(56, 180, 180);
+    font-family:  'Courier New', Courier, monospace;
+    font-size: 18px;
+    
+    
+}
+
+.projects-container h3{
+    margin-top: 5px;
+    font-size: 24px;
+    color: azure;
+    
+    
+}
+.projects-card{
+    border: 1px solid rgb(56, 180, 180,0.5);
+    background-color: rgb(188, 191, 194,0.3);
+}
+
+.projects-card:nth-child(2n){
+    margin-top: 1rem;
+}
+.projects-card:last-child{
+    margin-bottom: 5rem;
+}
+
+.projects-card img{
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.contact-form-container{
+    border: 1px solid rgb(56, 180, 180);
+    background-color: rgb(188, 191, 194,0.3);
+    margin-bottom: 5rem;
+    color: rgb(56, 180, 180);
+    font-family:  'Courier New', Courier, monospace;
+}
+.contact-us-img{
+    max-width: 350px;
+    max-height: 550px;;
+}
+.form-control
+{
+    min-width: 0;
+    border: 1px solid rgb(56, 180, 180);
+    border-radius: 0;
+    background-color: rgb(188, 191, 194,0.3) !important;
+    color: azure !important;
+}
+.form-control::-moz-placeholder {
+  color: rgb(56, 180, 180) !important;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: rgb(56, 180, 180) !important;
+}
+.form-control::-webkit-input-placeholder {
+  color: rgb(56, 180, 180) !important;
+}
+.form-button{
+    background-color: rgb(56, 180, 180);
+}
+
+.form-button:hover{
+    background-color: rgb(56, 180, 180,0.6);
+    color: azure;
+}
+
+
+
+
+</style>
+<div class="container p-0 ">
+    <div class="row header-container p-0 " >
+        <div class="col-md-6 header-inner-section-1 "  >
+            <h1>Hello!, I'm Datta</h1>
+            <h6 class="header-text-1"> < Freelance Fullstack Developer /></h6>
+
+        </div>
+        <div class="col-md-3 header-inner-section-2 p-0" >
+            <img src="{% static 'media/datta-photo-11.jpg' %}" alt="" class="header-img">
+        </div>
+        <div class="col-md-3 header-inner-section-3" >
+            <div class="row m-0 p-5" >
+                <div class="col-md-12 p-2 " >
+                   <a href="#" class="download-cv" > <img src="{% static 'media/download.png' %}" alt="" >
+                    <p> Download CV</p>  
+                   </a>   
+                          
+                </div>
+                <hr>
+                <di class="col-md-12 social-icons">
+                    <a href="#"><img src="{% static 'media/linkedin-1.png' %}" alt=""></a> 
+                    <a href="#"><img src="{% static 'media/github.png' %}" alt=""></a> 
+                    <a href="#"><img src="{% static 'media/facebook.png' %}" alt=""></a> 
+                    
+                </di>
+                
+
+            </div>
+            
+        </div>
+
+    </div>
+    
+</div>
+
+<div class="container tools-container p-0">
+    <div class="row m-0 tools-table ">
+        <div class="col-sm-12 tools-table-header m-0">
+            My Current Stack
+        </div>
+        <hr>
+        <div class="col-sm-12 tools-table-data tool-icons m-0 p-2 justify-content-center">            
+                <div class="row ">
+                    <div class="col-sm-12 ">
+                        <a href="#"><img src="{% static 'media/python.png' %}" alt="" class="tools-image"></a> 
+                        <a href="#"><img src="{% static 'media/django-icon.png' %}" alt="" class="tools-image"></a> 
+                        <a href="#"><img src="{% static 'media/html.png' %}" alt="" class="tools-image"></a>  
+                        <a href="#"><img src="{% static 'media/css-1.png' %}" alt="" class="tools-image"></a>           
+                        <a href="#"><img src="{% static 'media/sass.png' %}" alt="" class="tools-image"></a> 
+                        <a href="#"><img src="{% static 'media/js.png' %}" alt="" class="tools-image"></a>            
+                        <a href="#"><img src="{% static 'media/reactjs.png' %}" alt="" class="tools-image"></a>            
+                        <a href="#"><img src="{% static 'media/bootstrap.png' %}" alt="" class="tools-image"></a>           
+                        <a href="#"><img src="{% static 'media/figma.png' %}" alt="" class="tools-image"></a>            
+                        <a href="#"><img src="{% static 'media/photoshop.png' %}" alt="" class="tools-image"></a>          
+                        <a href="#"><img src="{% static 'media/rest-api-icon-1.png' %}" alt="" class="tools-image"></a> 
+                        <a href="#"><img src="{% static 'media/git.png' %}" alt="" class="tools-image"></a>            
+                    </div>
+                </div>
+                    
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container projects-container p-0">
+    <div class="row p-0 m-0 ">
+        <div class="col-sm-12 tools-table-header m-0">
+            My Recent Projects
+        </div>
+        <hr >
+        <!-- Projects-card-->
+        <div class="col-md-12 projects-card p-0 mt-2">
+            <div class="row  m-0 p-0 ">
+                <div class="col-md-4 m-0 p-0 ">
+                    <img src="{% static 'media/projects-1.png'%}" alt="">
+                </div>
+                <div class="col-md-8 p-0">
+                    <div class="row m-0">
+                        <div class="col-md-12">
+                            <h3>Project Title 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-end view-more-btn align-items-end ">
+                            <button class="btn btn-dark btn-sm mt-5"> More info...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects-card end-->
+        <!-- Projects-card-->
+        <div class="col-md-12 projects-card p-0 mt-2">
+            <div class="row  m-0 p-0 ">
+                <div class="col-md-4 m-0 p-0 ">
+                    <img src="{% static 'media/projects-1.png'%}" alt="">
+                </div>
+                <div class="col-md-8 p-0">
+                    <div class="row m-0">
+                        <div class="col-md-12">
+                            <h3>Project Title 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-end view-more-btn align-items-end ">
+                            <button class="btn btn-dark btn-sm mt-5"> More info...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects-card end-->
+    </div>
+</div>
+
+<!-- Contact Form-->
+
+<div class="container contact-form-container p-5">
+    <div class="row justify-content-center">
+        <div class="col-md-12 ">
+            <div class="row justify-content-center">
+                <div class="col-md-6 justify-content-center">
+                    <h3 class="heading mb-4">Let's talk about everything!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas debitis, fugit natus?</p>
+                    <p><img src="{% static 'media/contact-us.png'%}" alt="Image" class="contact-us-img"></p>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <form class="mb-5" method="post" id="contactForm" name="contactForm" novalidate="novalidate">
+                        <div class="row mb-2">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-12 form-group">
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="7"
+                                    placeholder="Write your message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-12 mt-2">
+                                <input type="submit" value="Send Message" class="btn form-button  py-2 px-4">
+                                <span class="submitting"></span>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div onclick="topFunction()" id="myBtn">
+    <a><img src="{% static 'media/up-arrow.png' %}" alt="" width="50px" height="50px" ></a>
+</div>
+
+
+{% endblock %}
